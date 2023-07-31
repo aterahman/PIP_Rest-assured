@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Utils.testnglistener"></listener>
+    </listeners>
+    <test name="Product API Details Tests">
+        <classes>
+            <class name="TestCases.ProductApiDetails.GetPayloadTest"></class>
+            <class name="TestCases.ProductApiDetails.PostToPayloadTest"></class>
+        </classes>
+    </test>
+    <test name="User API Details Tests">
+        <classes>
+            <class name="TestCases.UsersApiDetails.GetPayloadTest"></class>
+        </classes>
+    </test>
+    <test name="Carts API Details Tests">
+        <classes>
+            <class name="TestCases.CartApiDetails.GetPayloadTest"></class>
+        </classes>
+    </test>
+</suite>
