@@ -62,7 +62,7 @@ public class PostToPayloadTest extends ExtentTestGenerator
                 and().
                 assertThat().
                 contentType("application/json; charset=utf-8").
-                body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema.json"));
+                body(JsonSchemaValidator.matchesJsonSchemaInClasspath("post_products_schema.json"));
         }
     }
 }
